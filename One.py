@@ -8,7 +8,6 @@ class One:
         self.page = 1
         self.cur_url = "http://wufazhuce.com/one/vol.{page}"
         self.datas = []
-        print "loading..."
     def get_page(self, cur_page) :
         url = self.cur_url
         try :
@@ -52,6 +51,7 @@ class One:
             self.saveImg(my_page)
             self.page += 1
 def main() :
+    print "Loading..."
     onepic = One()
     onepic.start_pic()
     print "END..."
