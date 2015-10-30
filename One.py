@@ -7,7 +7,6 @@ class One:
     def __init__(self) :
         self.page = 1
         self.cur_url = "http://wufazhuce.com/one/vol.{page}"
-        print "loading..."
     def get_page(self, cur_page) :
         url = self.cur_url
         try :
@@ -45,6 +44,7 @@ class One:
         """
         爬虫入口, 并控制爬虫抓取页面的范围
         """
+        print "loading..."
         while self.page <= 1117 :
             self.mkdir()
             my_page = self.get_page(self.page)
