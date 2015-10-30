@@ -7,7 +7,6 @@ class One:
     def __init__(self) :
         self.page = 1
         self.cur_url = "http://wufazhuce.com/one/vol.{page}"
-        self.datas = []
         print "loading..."
     def get_page(self, cur_page) :
         url = self.cur_url
