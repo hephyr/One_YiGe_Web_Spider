@@ -51,6 +51,7 @@ class One:
             self.saveImg(my_page)
             self.page += 1
 def main() :
+    print "Loading..."
     onepic = One()
     onepic.start_pic()
     print "END..."
